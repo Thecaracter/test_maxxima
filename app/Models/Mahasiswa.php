@@ -12,4 +12,8 @@ class Mahasiswa extends Model
     protected $table = 'mahasiswa';
 
     protected $fillable = ['nama', 'jenis_kelamin', 'alamat', 'krs'];
+    public function mataKuliahs()
+    {
+        return $this->hasMany(MataKuliah::class, 'id_mahasiswa', 'id');
+    }
 }

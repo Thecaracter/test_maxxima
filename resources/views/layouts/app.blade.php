@@ -47,8 +47,7 @@
         @yield('content')
     </div>
 
-    <!-- Footer content -->
-    @include('component.footer')
+
 
     <!-- General JS Scripts -->
     <script src="admin/assets/js/app.min.js"></script>
